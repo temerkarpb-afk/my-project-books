@@ -369,4 +369,53 @@ body {
 
 .btn-username:hover {
     background: #047857;
+
 }
+/* Добавь это в конец своего файла style.css */
+
+.books-grid {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+}
+
+.book-item {
+    background: white;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    max-width: 220px;
+    transition: 0.3s;
+}
+
+.book-item:hover {
+    transform: scale(1.05);
+}
+
+.book-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 4px;
+}
+
+.book-item p {
+    margin-top: 10px;
+    font-weight: 600;
+    color: #1a73e8;
+}
+
+/* Фикс для кнопок классов на мобилках */
+@media (max-width: 600px) {
+    .buttons {
+        justify-content: center;
+    }
+    
+    .buttons button {
+        flex-grow: 0;
+        width: 30%; /* По 3 кнопки в ряд */
+        font-size: 12px;
+    }
+    }
+    
